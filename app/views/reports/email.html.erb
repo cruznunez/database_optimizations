@@ -1,5 +1,5 @@
 <%= form_tag('confirmation') do %>
-  <h3>Please enter you email and select which assembly you want</h3>
+  <h3>Please enter your email and select which assembly you want</h3>
   <p>
     <%= label_tag :name, "Assembly Name" %>
     <%= select_tag :name, options_for_select(@choices), {include_blank: true} %>
