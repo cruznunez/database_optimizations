@@ -1,0 +1,9 @@
+<%= form_tag('confirmation') do %>
+  <h3>Please enter you email and select which assembly you want</h3>
+  <p><%= select_tag :name, options_for_select(@choices) %></p>
+  <p>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </p>
+  <p><%= submit_tag "Submit", id: "submit", data: {confirm: "You sure you want ALL THIS DATA, MAN?!?!"} %></p>
+<% end %>
