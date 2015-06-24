@@ -13,6 +13,6 @@ class ReportsController < ApplicationController
   def confirmation
     @email = params[:email]
     @name = params[:name]
-    # SendEmailJob(@name, @email).respond_later
+    SendEmailJob.perform_later(@name, @email)
   end
 end
