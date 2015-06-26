@@ -13,6 +13,7 @@ class ReportsController < ApplicationController
   def confirmation
     @email = params[:email]
     @name = params[:name]
-    SendEmailJob.perform_later(@name, @email)
+    # SendEmailJob.perform_later(@name, @email)
+    Emailer.all_data(@name, @email).deliver_later
   end
 end
