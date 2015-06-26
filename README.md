@@ -11,7 +11,7 @@ For this project, you will be starting with an application which runs very slowl
 Once you pull down the application from GitHub, run `bundle install` and `rake db:migrate`, then follow the steps below.
 
 * Run `rake db:seed`, but time it.  Record the amount of time it takes for the seeds to run.
-  * `4660.915127 seconds (78 minutes)`
+  * **`4660.915127 seconds (78 minutes)`**
 * Turn on your server and open your browser.
 * Open Chrome's timeline in developer tools, then go to `localhost:3000`.
 * Determine how long it takes the index page to load.  Record that time.
